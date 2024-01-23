@@ -4,16 +4,238 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- tailwind and daisyUI setup -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <header>hi</header>
-    <main></main>
+    <header></header>
+    <main>
+      <!-- hockey club section -->
+      <section class="my-16 lg:my-24 w-10/12 mx-auto">
+        <div class="space-y-8">
+          <hr class="border-dashed text-[#13131293]" />
+          <h1
+            class="text-center text-3xl lg:text-5xl font-extrabold text-black"
+          >
+            Professional Hockeys Club
+          </h1>
+          <p
+            class="text-base lg:text-lg text-[#13131299] font-medium text-center"
+          >
+            Cutting-edge amenities, including advanced training gyms, ice rinks,
+            and sports medicine centers, <br />
+            supporting peak performance for our professional hockey athletes.
+          </p>
+          <hr class="border-dashed text-[#13131233]" />
+        </div>
+        <!-- radial div -->
+        <div
+          class="flex justify-around gap-5 lg:gap-10 text-center flex-col lg:flex-row"
+        >
+          <div class="space-y-5 p-4 lg:p-10">
+            <div
+              class="radial-progress text-[#ef4444]"
+              style="--value: 87; --size: 8rem"
+              role="progressbar"
+            >
+              <span class="font-extrabold text-2xl text-black">87%</span>
+            </div>
+            <div class="text-center space-y-4">
+              <h1 class="text-2xl font-semibold">Prayer Facility</h1>
+              <p class="text-lg text-[#13131299]">
+                World-class player facilities designed for optimal performance
+                and well-being.
+              </p>
+            </div>
+          </div>
+          <div class="space-y-5 p-4 lg:p-10">
+            <div
+              class="radial-progress text-[#10b981]"
+              style="--value: 95; --size: 8rem"
+              role="progressbar"
+            >
+              <span class="font-extrabold text-2xl text-black">95%</span>
+            </div>
+            <div class="text-center space-y-4">
+              <h1 class="text-2xl font-semibold">Experienced Coach</h1>
+              <p class="text-lg text-[#13131299]">
+                A seasoned coach dedicated to unlocking the full potential of
+                every athlete.
+              </p>
+            </div>
+          </div>
+          <div class="space-y-5 p-4 lg:p-10">
+            <div
+              class="radial-progress text-[#fbbf24]"
+              style="--value: 90; --size: 8rem"
+              role="progressbar"
+            >
+              <span class="font-extrabold text-2xl text-black">90%</span>
+            </div>
+            <div class="text-center space-y-4">
+              <h1 class="text-2xl font-semibold">Senior Player</h1>
+              <p class="text-lg text-[#13131299]">
+                Learn with senior players, bringing skill, leadership, and
+                experience to the game.
+              </p>
+            </div>
+          </div>
+          <div class="space-y-5 p-4 lg:p-10">
+            <div
+              class="radial-progress text-[#2563eb]"
+              style="--value: 80; --size: 8rem"
+              role="progressbar"
+            >
+              <span class="font-extrabold text-2xl text-black">80%</span>
+            </div>
+            <div class="text-center space-y-4">
+              <h1 class="text-2xl font-semibold">Training Ground</h1>
+              <p class="text-lg text-[#13131299]">
+                Premier training ground fostering excellence and athletic
+                development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- program section -->
+      <section class="mb-16 lg:my-24 w-10/12 mx-auto">
+        <div>
+          <div class="space-y-8 mb-11">
+            <hr class="border-dashed text-[#13131293]" />
+            <h1
+              class="text-center text-3xl lg:text-5xl font-extrabold text-black"
+            >
+              Program Sections
+            </h1>
+            <p
+              class="text-base lg:text-lg text-[#13131299] font-medium text-center"
+            >
+              From Junior Jamboree to Teen Titans Training and Senior Summit
+              Series, our programs cater to every age,<br />
+              nurturing growth and skill development." "Navigating the stages of
+              youth—from Little Legends League to Teen Triumph Track <br />
+              and Senior Stride Squad—our programs inspire, educate, and elevate
+              athletes at every level.
+            </p>
+            <hr class="border-dashed text-[#13131233]" />
+          </div>
+
+          <!-- cards -->
+
+          <div class="flex flex-col lg:flex-row gap-4 lg:gap-10">
+            <div
+              class="rounded-xl hero"
+              style="
+                background-image: url(./Images/2.png);
+                background-repeat: no-repeat;
+                object-fit: cover;
+              "
+            >
+              <div
+                class="text-start p-2 lg:p-8 bg-opacity-60 hero-overlay rounded-xl"
+              >
+                <div class="pt-4 lg:pt-10 space-y-4 p-6 lg:p-0">
+                  <h1 class="text-3xl lg:text-5xl font-extrabold text-white">
+                    Junior Program
+                  </h1>
+                  <p class="text-white">
+                    Nurturing young talents with passion and purpose, our junior
+                    program is a vibrant <br />
+                    journey where skills grow, friendships flourish, and dreams
+                    take flight.
+                  </p>
+                  <button
+                    class="text-lg lg:text-xl p-2 lg:p-4 font-bold text-white bg-[#FF4240] rounded-lg"
+                  >
+                    Register Now!
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-xl hero"
+              style="
+                background-image: url(./Images/3.png);
+                background-repeat: no-repeat;
+                object-fit: cover;
+              "
+            >
+              <div
+                class="text-start p-2 lg:p-8 bg-opacity-60 hero-overlay rounded-xl"
+              >
+                <div class="pt-4 lg:pt-10 space-y-4 p-6 lg:p-0">
+                  <h1 class="text-3xl lg:text-5xl font-extrabold text-white">
+                    Teenager Program
+                  </h1>
+                  <p class="text-white">
+                    Empowering teenagers through our program, where mentorship
+                    meets innovation,<br / > creating a platform for
+                    self-discovery, growth, and athletic excellence.
+                  </p>
+                  <button
+                    class="text-lg lg:text-xl p-2 lg:p-4 font-bold text-white bg-[#FF4240] rounded-lg"
+                  >
+                    Register Now!
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div>
+            <div
+              class="rounded-xl hero mt-5 lg:mt-10 lg:h-[500px]"
+              style="
+                background-image: url(./Images/4.png);
+                background-repeat: no-repeat;
+                object-fit: cover;
+              "
+            >
+              <div
+                class="text-start p-2 lg:p-8 bg-opacity-60 hero-overlay rounded-xl"
+              >
+                <div class="pt-4 lg:pt-10 space-y-4 p-6 lg:p-0 lg:mt-44">
+                  <h1 class="text-3xl lg:text-5xl font-extrabold text-white">
+                    Teenager Program
+                  </h1>
+                  <p class="text-white">
+                    In the Professional Program, we sculpt champions, blending
+                    elite training, <br />
+                    cutting-edge techniques, and unwavering support to forge a
+                    <br />
+                    legacy of triumph in the world of sports
+                  </p>
+                  <button
+                    class="text-lg lg:text-xl p-2 lg:p-4 font-bold text-white bg-[#FF4240] rounded-lg"
+                  >
+                    Register Now!
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
