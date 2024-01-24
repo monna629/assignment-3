@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Hockey Heritage Hub</title>
+    <link rel="shortcut icon" href="./Images/pd.png" type="image/x-icon" />
     <script
       src="https://kit.fontawesome.com/bff91b679f.js"
       crossorigin="anonymous"
@@ -29,7 +30,37 @@
     </style>
   </head>
   <body>
-    <header></header>
+    <header>
+      <!-- nav bar section -->
+      <nav class="flex justify-around items-center my-10">
+        <i
+          class="fa-solid fa-bars fa-sm lg:fa-xl block lg:hidden"
+          style="color: #000000"
+        ></i>
+        <h1 class="font-extrabold text-2xl lg:text-3xl">
+          Hockey <span class="text-[#FF4240]">Heritage</span> Hub
+        </h1>
+        <div class="lg:flex flex-row items-center hidden">
+          <li class="list-none flex flex-row gap-7">
+            <a href="" class="text-[#FF4240]">Home</a><a href="">About</a
+            ><a href="">Pages</a><a href="">Blogs</a><a href="">Contracts</a>
+          </li>
+        </div>
+
+        <div>
+          <i
+            class="fa-solid fa-magnifying-glass fa-lg lg:fa-xl mr-1 lg:mr-5"
+            style="color: #aaadb1"
+          ></i>
+          <button
+            class="text-sm lg:text-xl p-2 lg:p-4 font-bold text-white bg-[#FF4240] rounded-lg"
+          >
+            Get Tickets
+          </button>
+        </div>
+      </nav>
+      <!-- banner section -->
+    </header>
     <main>
       <!-- hockey club section -->
       <section class="my-16 lg:my-24 w-10/12 mx-auto">
@@ -490,6 +521,7 @@
         </div>
       </section>
     </main>
+    <!-- footer -->
     <footer>
       <footer
         class="p-4 lg:p-10 bg-black text-[#FFFFFF99] flex flex-col lg:flex-row gap-5"
